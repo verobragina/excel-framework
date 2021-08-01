@@ -5,6 +5,7 @@
   text-align: center;
   position: relative;
   display: inline-block;
+  border-radius: 3px;
   color: rgba(0, 0, 0, 0.7);
 
   & i {
@@ -13,11 +14,16 @@
 
   &:active, &.active {
     color: $color;
+    background: #e6f4ea;
   }
 
   &:hover {
     background: #eee;
     cursor: pointer;
+  }
+
+  &:not(:last-child) {
+    margin-right: 2px;
   }
 }
 
